@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[user]
+	name = Technical Writing Test - Atlas
+	email = carrizaleshernandez.fernando@gmail.com
+[lfs]
+	repositoryformatversion = 0
+[remote "origin"]
+	url = https://github.com/FerCarri/AtlasTestingRepository.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
