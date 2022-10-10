@@ -169,7 +169,7 @@ REQ-END-006
     WHEN user clicks on ‘Cancel’ button,
     the app shall close the window and don’t make changes.
 
-## User overrides
+## User override
 
 REQ-OR-001
     WHILE user is in the ‘Title Calculation’ section,
