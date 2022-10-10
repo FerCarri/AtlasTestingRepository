@@ -1,19 +1,19 @@
-#Invoice/Policy Rates Calculation
+#Title Calculation/Policy Rates Calculation
 
 ##Overview
 The PRC calculates the loan’s and owner’s policy or premium that needs to be paid whenever there is a loan or a lender, the calculation depends on the state, transaction type, underwriter, close form, and rate type. Both policies need to be purchased by the homebuyer, however, there are some states where the seller is the one that pays for the Loan’s Policy. Also, the Owner's policy is an optional purchased, still is recommended to purchase both of them.  
 
-##Enable Invoice or Policy Rates Calculation
+##Enable Title Calculation or Policy Rates Calculation
 
 REQ-IS-001
     WHERE the File has the address in CT, MA, or RI,
     WHEN the user opens the File,
-    the app shall add the 'Invoice' Section as enabled.
+    the app shall add the 'Title Calculation' Section as enabled.
 
 REQ-IS-002.     
     WHERE the FILE doesn’t have the address in CT, MA, or RI,
     WHEN user opens the FILE,
-    The app shall not show the ‘Invoice’ section as enabled.
+    The app shall not show the ‘Title Calculation’ section as enabled.
 
 ##Admin/Database Configuration Switch
 REQ-SC-001
@@ -142,11 +142,11 @@ REQ-PCC-009
 ## Endorsements
 
 REQ-END-001
-    WHILE user is on the ‘Invoice’ screen,
+    WHILE user is on the ‘Title Calculation’ screen,
     the app shall show the ‘Line Item Charge’ section with the ‘Add Charge’ or '+' button to add endorsements.
 
 REQ-END-002
-    WHILE user is on the ‘Invoice’ screen,
+    WHILE user is on the ‘Title Calculation’ screen,
     WHEN user clicks on ‘Add Charge’ or '+',
     the app shall add a new row with a combo box where the catalog of endorsements can be selected depending on the state.
 
@@ -162,7 +162,7 @@ REQ-END-004
 REQ-END-005
     WHILE user is on the ‘Line Item Detail' window,
     WHEN user clicks on ‘OK’ button,
-    the app shall close the window and make the changes done by the user on the row added in ‘Invoice’ screen.
+    the app shall close the window and make the changes done by the user on the row added in ‘Title Calculation’ screen.
 
 REQ-END-006
     WHILE user is on the ‘Line Item Detail' window,
@@ -172,7 +172,7 @@ REQ-END-006
 ## User override
 
 REQ-OR-001
-    WHILE user is in the ‘Invoice’ section, 
+    WHILE user is in the ‘Title Calculation’ section,
     WHEN user selects a field and the field can be override,
     the app shall show the checkbox to be checked if the user wants to override.
 
@@ -182,7 +182,7 @@ REQ-OR-002
 
 REQ-OR-003
     WHEN user accepts the override changes,
-    the app shall make the necessary changes on the ‘Invoice’ section and re-calculations if necessary.
+    the app shall make the necessary changes on the ‘Title Calculation’ section and re-calculations if necessary.
 
 REQ-OR-004
     WHEN user accepts the override changes and affects directly the Policy calculation,
